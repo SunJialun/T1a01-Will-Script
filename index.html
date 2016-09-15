@@ -1,36 +1,33 @@
 
-Hi <b>there</b> World <br><br>
 
 
-<input id="myInput" type=text value="Mary"> <br><br>
+<h1 align=center>t1a02-show by Fred </h1>
+
+
+<input id="myInput" type=text value="3"> <br><br>
 
 
 
-<input type=button value="Run Wow" onclick="{
+<input type=button value="Loop Add" onclick="{
 
 
   myOut = document.getElementById('myArea')
 
   myIn  = document.getElementById('myInput')
 
-  //alert(myIn.value)
+  myTotal = 0
 
 
- for (myCount = 10; myCount >= 1; myCount--){
+  for (myCount = 1; myCount <= 3; myCount++){
+
+     if ( myCount == 3 ){
+
+         myTotal += 3
 
 
-     myOut.innerHTML += myCount + ' ' + myIn.value
+     }
 
-
-     if (   (myCount == 3) || (myCount == 7)  ){
-
-
-        myOut.innerHTML += ' Cool'
-
-
-    }
-
-     myOut.innerHTML +=  '<br>'
+     myOut.innerHTML = myIn.value + ' repeat adding =' + myTotal
 
   }
 
@@ -43,15 +40,13 @@ Hi <b>there</b> World <br><br>
 <div id="myArea" > Your output will go here <br></div> <br>
 
 
-<input type=button value="Show myOut" onclick="{
+<input type=button value="Show myIn.value" onclick="{
 
   
 
-   alert('The variable myOut contains ' + myOut.innerHTML)
+   alert(myIn.value)
 
 
 }">
-
-
 
 
