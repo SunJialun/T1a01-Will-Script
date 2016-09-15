@@ -18,14 +18,14 @@
   myTotal = 0
 
 
-  for (myCount = 1; myCount <= 3; myCount++){
+  for (myCount = 1; myCount <= Math.abs(myIn.value) ; myCount++){
 
      if ( myCount >= 2 ){
 
          myTotal += parseInt(myIn.value)
 
 
-     }
+     } else myTotal ='Enter a postive number greater than 1'
 
      myOut.innerHTML = myIn.value + ' repeat adding =' + myTotal
 
