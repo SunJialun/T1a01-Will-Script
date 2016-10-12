@@ -4,5 +4,5 @@
 
 rawgit
 
-https://rawgit.com/SunJialun/T1a01-Will-Script/master/index.html
+https://sunjialun.github.io/T1a01-Will-Script/
 
